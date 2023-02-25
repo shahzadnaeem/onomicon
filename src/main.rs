@@ -1,4 +1,4 @@
-use onomicon::samples::simple;
+use onomicon::samples::simple::Simple;
 
 fn main() {
     let pairs = [
@@ -9,7 +9,7 @@ fn main() {
 
     let simples = pairs
         .iter()
-        .map(|(k, v)| simple::Simple::new(k, v))
+        .map(|(k, v)| Simple::new(k, v))
         .collect::<Vec<_>>();
 
     for simple in simples {
