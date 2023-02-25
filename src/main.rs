@@ -5,6 +5,7 @@ fn main() {
         ("one", "a thing"),
         ("a very long key for", "?"),
         ("12345", "hey"),
+        (include_str!("./main.rs"), "this file as a key!!!"),
     ];
 
     let simples = pairs
